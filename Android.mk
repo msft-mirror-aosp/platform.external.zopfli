@@ -11,14 +11,14 @@ zopfli_files := \
 
 LOCAL_MODULE := libzopfli
 LOCAL_MODULE_HOST_OS := darwin linux windows
-LOCAL_CFLAGS += -O2
+LOCAL_CFLAGS += -O2 -Wno-unused-parameter -Werror
 LOCAL_SRC_FILES := $(zopfli_files)
 LOCAL_MULTILIB := both
 include $(BUILD_HOST_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libzopfli
-LOCAL_CFLAGS += -O2
+LOCAL_CFLAGS += -O2 -Wno-unused-parameter -Werror
 LOCAL_SRC_FILES := $(zopfli_files)
 LOCAL_MULTILIB := both
 include $(BUILD_SHARED_LIBRARY)
