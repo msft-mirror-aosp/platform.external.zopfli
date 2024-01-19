@@ -69,24 +69,3 @@ cc_binary_host {
     ],
 
 }
-
-cc_library {
-    name: "liblodepng_fuzz",
-
-    cflags: [
-        "-O2",
-        "-Wno-unused-parameter",
-        "-Werror",
-    ],
-    srcs: [
-        "src/zopflipng/lodepng/lodepng.cpp",
-        "src/zopflipng/lodepng/lodepng_util.cpp",
-        "src/zopflipng/zopflipng_lib.cc",
-        "src/zopflipng/zopflipng_bin.cc",
-    ],
-
-    static_libs: [
-        "libzopfli",
-    ],
-
-}
