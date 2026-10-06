@@ -16,4 +16,9 @@ third_party {
     value: "https://github.com/google/zopfli.git"
     version: "ccf9f0588d4a4509cb1040310ec122243e670ee6"
   }
+  security: {
+    tag: "android:on_device_usage"
+    tag: "android:privilege_level:privileged"
+    tag: "android:untrusted_input"
+  }
 }
